@@ -52,9 +52,13 @@ which include fetching, converting, splitting, and uploading the processed files
 # <span style="color: blue;">**Usage:**</span>
  - Set up your S3 bucket to trigger the handler function whenever a new image is uploaded.
  - The ImageHandler class automatically fetches the image, processes it, and uploads the results (image chunks, metadata, and offsets) back to S3.  
- 
-This project enables efficient processing of large image files, converting them 
-into manageable pieces and providing metadata and chunk offsets for further processing or analysis. 
+
+# <span style="color: blue;">**Docker Integration:**</span>
+
+This project is packaged in Docker and uploaded to AWS Lambda as a Docker image through Amazon Elastic Container Registry (ECR). Docker allows the entire project, 
+including its dependencies and environment, to be easily managed and deployed within AWS Lambda, ensuring consistent execution in a serverless environment.
+
+This project enables efficient processing of large image files, converting them into manageable pieces and providing metadata and chunk offsets for further processing or analysis.
 
 
  
